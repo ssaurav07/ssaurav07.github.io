@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Assignment 3_1(a)</title>
+    <link rel="icon" type="image/png" href="https://media.coschedule.com/uploads/cos-logo-icon-orgwht-800x800.png">
+<style>
+body{
+background-image:url("new2.jpg");
+background-repeat:repeat;
+background-attachment:fixed;
+background-position: right top;
+}
+
+#a{
+background-color:white;
+border: none;
+height:780px;
+width:500px;
+box-shadow: 3px 3px 10px 10px rgb(235,89,33);
+}
+#user_type:hover,#u_name:hover,#pwd:hover,#email:hover,#age:hover,#addrs:hover{
+outline:none;
+border-radius: 100px;
+box-shadow: 1px 1px 2px 2px rgb(235,89,33);
+}
+
+#btn2
+{
+outline:none;
+border-radius: 80px;
+box-shadow: 1px 1px 2px 2px red;
+background-color:lightgreen;
+margin-left:1em;
+}
+#link{
+text-decoration:none;
+}
+#pre{
+margin-left:-50px;
+}
+#div{
+border:2px solid red;
+background-color:white;
+height:20px;
+width:80px;
+color:black;
+padding-top:2px;
+padding-bottom:2px;
+padding-left:5px;
+padding-right:5px;
+margin-left:18px;
+margin-top:40px;
+}
+</style>
+    <script>
+       
+        function validation(){
+         
+        var result=true;  
+        var pwd= document.getElementById("password").value;
+        var cpwd=document.getElementById("cpassword").value;
+        var age=document.getElementById("age").value;
+        var name=document.getElementById("u_name").value;
+        var add=document.getElementById("addrs").value;
+            
+        var i=0;
+            
+            if(age>0&&age<=100)
+          {
+                    
+           var e=document.getElementById("email").value;
+           var atIndex=e.indexOf("@");
+           var dotIndex=e.lastIndexOf(".");    
+            if(atIndex<1 || dotIndex<e.length-4 || dotIndex>e.length-3){
+                alert("Please enter your mail id in crrct format");
+                result=false;
+                return (result);}
+              
+              else if(pwd!=cpwd)
+                      {
+                          alert("Passwords doesn't match! ")
+                          return false;
+                      }
+              
+              else if(pwd.length<4||pwd.length>14)
+                  {
+                      alert("Password must be 4-14 characters long! ")
+                      return false;
+                  }
+              else if(name.length<3)
+                  {
+                      alert("Name is too short! Must be 3 characters atleast ")
+                      return false;
+                  }
+              else if(add.length!=12)
+                  {
+                      alert("Aadhar Number must be 12 characters long ")
+                      return false;
+                  }
+              else
+                {
+                    return true;
+                }
+                     
+            }
+            
+             else{
+                alert("Age must be between 1-100  ");
+                return false;
+                 }
+    }
+            
+    </script>
+</head>
+<body><br><br><br>
+<form onsubmit="return validation()" method="post";>
+<center>
+<fieldset id="a">
+<legend id="lgnd1"></legend>
+<center><br><img src="R10.jpg" id="foto2" height="200" width="400" style="margin-left:25px;"></center><br>
+<center><pre id="pre">
+             Name: <input type="alphabet" id="u_name" placeholder=" enter your full name" style="width:300px; height:25px;" required ></input><br><br>
+              Age: <input type="number" id="age" placeholder=" as on April 1 , 2020 " style="width:300px; height:25px;" required></input><br>
+<p style="margin-left:-170px;">Gender: <input type="radio" name="gender" > Male</input><br>
+	  <input type="radio" name="gender"> Female</input><br>
+	  <input type="radio" name="gender"> Others</input><br></p>
+       Aadhar No.: <input type="text" id="addrs" placeholder="e.g 12********34" style="width:300px; height:25px;" required></input><br><br></pre>
+         <pre id="pre">		  
+         Email-ID: <input type="text" id="email" placeholder=" e.g. abc@xyz.com " style="width:300px; height:25px;margin-top: -20px;" required></input><br><br>
+         Password: <input type="password" id="password" placeholder="*********" style="width:300px; height:25px;margin-top: -20px;" required></input><br><br><br> Confirm Password: <input type="password" id="cpassword" placeholder="*********" style="width:300px; height:25px;margin-top: -20px;" required></input><br><br></center>
+<input type="submit" id="btn2" value="SignUp" style="width:100px; height:25px;" ><br><br>
+
+</fieldset>
+</center>
+</form><br><br>
+
+</body>
+</html>

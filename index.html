@@ -1,0 +1,314 @@
+<html>
+<head><title>Gallery || Indian Accent Restaurant || New Delhi </title>
+<link rel="icon" type="image/gif" href="topicon.png">
+    
+    <style>
+        #navbar {
+            background-color: white;
+  position: fixed; /* Make it stick/fixed */
+  top: 0px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  height:100px;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+ align-self: center;
+}
+
+#navbar a:hover {
+    background-color: aliceblue;
+  color: orangered;
+}
+#nav{
+    letter-spacing: 5px;
+    font-size: 16px;
+}
+#b{
+    margin-left: 110px;
+    height: 70px;
+    width: 300px;
+    margin-top: 15px;
+}
+        #container1{
+            border:2px solid white;
+            width: 800;
+            height: 500;
+            margin-left: 250px;
+            margin-top: 50px;
+        }
+        #container2{
+            border:2px solid white;
+            width: 770;
+            height: 150;
+            margin-left: 274px;
+        }
+        
+        .image{
+            width:750px;
+            margin-left: 25px;
+        }
+        #scroll
+        {
+            margin-top: -250px;
+            font-size: 35px;
+            
+        }
+            .prev,
+            .next {
+                color:grey;
+                cursor: pointer;
+                
+                  }
+        .next {
+            right: 0;
+            float: right;
+            display: block;
+            margin-right: -25px;
+            }
+        .prev{
+            margin-left: -25px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            
+                color: rgba(0, 0, 0, 0.8);
+                
+            }
+        .ntext{
+            /*background-color: black;*/
+            color: white;
+            
+        }
+        .footer{
+	height: 3px;
+	width: 100%;
+	background-color: rgba(60,60,60,0.1);
+}
+.same1{
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.same1 li{
+    color:rgb(191, 191, 191);
+    display:inline-block;
+    padding:16px;
+}
+.same1 a{
+	text-decoration: unset;
+	 color:rgb(191, 191, 191);
+}
+.icon{
+    height: 30px;
+    width: 30px;
+}
+.same1 a:hover{
+    color:rgb(228,88,44);
+    cursor: pointer;
+}
+.same2{
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.same2 li{
+    color:rgb(191, 191, 191);
+    display:inline-block;
+    padding-right: 52px;
+    padding-top: 15px;
+}
+.same2 a{
+	text-decoration: unset;
+	 color:rgb(191, 191, 191);
+}
+.same2 a:hover{
+    color:rgb(228,88,44);
+    cursor: pointer;
+}
+
+.last{
+    width:100%;
+    height:70px;
+    background-color: rgba(60,60,60,0.1);
+}
+    </style>
+    
+    
+    </head>
+    <body>
+        
+        <div id="navbar">
+  <a href="reservations.html"><span id="nav"> RESERVATIONS </span></a>
+ 
+  <a href="file:///C:/Documents/Javascript/Project-20200422T111828Z-001/Project/menu.html"><span id="nav"> MENUS </span></a>
+         <img id="b" src="m_logo.png">
+                </div>
+        <script>
+            // When the user scrolls down 30px from the top of the document, slide down the navbar
+            // When the user scrolls to the top of the page, slide up the navbar (80px out of the top view)
+            window.onscroll = function() {scrollFunction();scroll();};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+                document.getElementById("navbar").style.top = "0";
+                 } 
+            else {
+                    document.getElementById("navbar").style.top = "0px";
+                 }
+            }
+
+        </script>
+        <br><br><br><br><br><br><br><br>    
+        <p style="margin-top: 0px"><a id="mess" style="color: rgb(235,89,33);margin-left: 300px;margin-top: 200px;font-family:cursive;">GALLERY</a> 
+            <a style="color: rgb(235,89,33);float:right;margin-right: 300px;font-family:cursive;">IMAGES</a></p>
+        
+        <div id="container1">
+            <div class="mySlides">
+                <div class="ntext">1/6</div>
+            <img class="image" src="R1.jpg" alt="Image1" height="480" width="750">
+            </div>
+            
+            <div class="mySlides">
+                <div class="ntext">2/6</div>
+            <img class="image" src="R2.jpg" alt="Image1" height="480" width="800">
+            </div>
+            
+            <div class="mySlides">
+                <div class="ntext">3/6</div>
+            <img class="image" src="R3.jpg" alt="Image1" height="480" width="800">
+            </div>
+            
+            <div class="mySlides">
+                <div class="ntext">4/6</div>
+            <img class="image" src="R4.jpg" alt="Image1" height="480" width="800">
+            </div>
+            
+            <div class="mySlides">
+                <div class="ntext">5/6</div>
+            <img class="image" src="R5.jpg" alt="Image1" height="480" width="800">
+            </div>
+            
+            <div class="mySlides">
+                <div class="ntext">6/6</div>
+            <img class="image" src="R6.jpg" alt="Image1" height="480" width="800">
+            </div>
+            
+            <p id="scroll"> <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a></p>
+            
+        </div>
+        <div id="container2">
+            <row id="row">
+                <column >
+                    <img class="thumbnail" src="s1.jpg" alt="img1" height="100" width="147" onclick="showThumb(0)">
+                </column>
+                <column>
+                    <img class="thumbnail" src="R2.jpg" alt="img1" height="100" width="147" onclick="showThumb(1)">
+                </column>
+                <column>
+                    <img class="thumbnail" src="R3.jpg" alt="img1" height="100" width="147" onclick="showThumb(2)">
+                </column> 
+                <column>
+                    <img class="thumbnail" src="R4.jpg" alt="img1" height="100" width="147" onclick="showThumb(3)">
+                </column>
+                <column>
+                    <img class="thumbnail" src="R5.jpg" alt="img1" height="100" width="147" onclick="showThumb(4)">
+                </column>
+               <!-- <column>
+                    <img src="R6.jpg" alt="img1" height="100" width="100">
+                </column> 
+                <column>
+                    <img src="R7.jpg" alt="img1" height="100" width="100">
+                </column> -->
+                
+            </row>
+        </div>
+        <div class="footer"></div>
+        <ul type="none" class="same1">
+             <li><a href="main.html">HOME</a></li>
+             <li><a href="about_us.html">ABOUT US</a></li>
+             <li><a>MENUS</a></li>
+             <li><a>NEWS</a></li>
+             <li><a>REACH US</a></li>
+             <li><img class="icon" src="facebook.jpg"> <img class="icon" src="twitter.png"> <img class="icon" src="insta.png"></li>
+             <li><a style="color:rgb(228,88,44);">NEW DELHI</a></li>
+             <li><a>NEW YORK</a></li>
+             <li><a>LONDON</a></li>
+             <li><a>ON LOCATION</a></li>
+        </ul>
+        <div class="last">
+        	<ul type="none" class="same2">
+             <li>COPYRIGHT 2020</li>
+             <li><a href="privacy_policy.html">PRIVACY POLICY</a></li>
+             <li><a href="terms&conditions.html">TERMS & CONDITIONS</a></li>
+             <li><a>COOKIE CONSENT</a></li>
+             <li><input style="background-color: rgba(60,60,60,0.1);width: 210px; height:30px;padding: 5px;" placeholder="SUBSCRIBE TO STAY UPDATED"> <button style="background-color:rgb(228,88,44); color: white; width: 150px; height:42px;padding: 5px; border: 0px solid orange;">Subscribe</button></li>
+        </ul></div>
+        <script>
+            var slideIndex=1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n)
+            {
+                showSlides(slideIndex+=n)
+            }
+            
+            function currentSlide(n)
+            {
+                showSlides(slideIndex=n);
+            }
+        function showSlides(n)
+            {
+                var i;
+                var slides=document.getElementsByClassName("mySlides");
+                
+                if(n<1)
+                    {
+                        slideIndex=slides.length;
+                    }
+                if (n>slides.length)
+                    {
+                        slideIndex=1;
+                    }
+                for(i=0;i<slides.length;i++)
+                    {
+                        slides[i].style.display="none";
+                    }
+                slides[slideIndex-1].style.display = "block";
+                
+    
+                for(i=0;i<slides.length-1;i++)
+                    {
+                        document.getElementsByClassName("thumbnail")[i].style.border="0px";
+                    }
+                document.getElementsByClassName("thumbnail")[slideIndex-1].style.border="1px red solid";
+                
+        }
+          
+           function showThumb(m)
+            {
+                var i;
+                var slides=document.getElementsByClassName("mySlides");
+                for(i=0;i<slides.length;i++)
+                    {
+                        slides[i].style.display="none";
+                    }
+                slides[m].style.display = "block";
+                
+                for(i=0;i<slides.length-1;i++)
+                    {
+                        document.getElementsByClassName("thumbnail")[i].style.border="0px";
+                    }
+                document.getElementsByClassName("thumbnail")[m].style.border="2px red solid";
+            }
+        </script>
+    </body>
+</html>

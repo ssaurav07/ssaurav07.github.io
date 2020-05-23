@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <title>3 Course Menu-Indian Accent</title>
+        <style>
+            #navbar {
+                background-color: white;
+  position: fixed; /* Make it stick/fixed */
+  top: 0px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  height:100px;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+ align-self: center;
+}
+
+#navbar a:hover {
+  background-color: aliceblue;
+  color: orangered;
+}
+#nav{
+    letter-spacing: 5px;
+    font-size: 16px;
+}
+#b{
+    margin-left: 110px;
+    height: 70px;
+    width: 300px;
+    margin-top: 15px;
+}
+        
+        .footer{
+	height: 3px;
+	width: 100%;
+	background-color: rgba(60,60,60,0.1);
+}
+.same1{
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.same1 li{
+    color:rgb(191, 191, 191);
+    display:inline-block;
+    padding:16px;
+}
+.same1 a{
+	text-decoration: unset;
+	 color:rgb(191, 191, 191);
+}
+.icon{
+    height: 30px;
+    width: 30px;
+}
+.same1 a:hover{
+    color:rgb(228,88,44);
+    cursor: pointer;
+}
+.same2{
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.same2 li{
+    color:rgb(191, 191, 191);
+    display:inline-block;
+    padding-right: 52px;
+    padding-top: 15px;
+}
+.same2 a{
+	text-decoration: unset;
+	 color:rgb(191, 191, 191);
+}
+.same2 a:hover{
+    color:rgb(228,88,44);
+    cursor: pointer;
+}
+
+.last{
+    width:100%;
+    height:70px;
+    background-color: rgba(60,60,60,0.1);
+}
+        </style>
+    </head>
+    <body >
+        <div id="navbar">
+  <a href="reservations.html"><span id="nav"> RESERVATIONS </span></a>
+ 
+  <a href="file:///C:/Documents/Javascript/Project-20200422T111828Z-001/Project/menu.html"><span id="nav"> MENUS </span></a>
+         <img id="b" src="m_logo.png">
+                </div>
+        <script>
+            // When the user scrolls down 30px from the top of the document, slide down the navbar
+            // When the user scrolls to the top of the page, slide up the navbar (80px out of the top view)
+            window.onscroll = function() {scrollFunction();scroll();};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+                document.getElementById("navbar").style.top = "0";
+                 } 
+            else {
+                    document.getElementById("navbar").style.top = "0px";
+                 }
+            }
+
+        </script>
+        <div style="border: 2px white solid ; height:100px;background-color: rgb(242,242,242);margin-top: 120px;text-align: center;padding-top: 35px;margin-left: -10px;margin-right: -8px;font-family: cursive;letter-spacing: 2px;"><h3 style="color: rgb(235,89,33)">3 COURSE LUNCH MENU</h3></div><br><br><br><br>
+        <p style="font-family: cursive;text-align: center;opacity: 0.6">
+            » potato sphere chaat, white pea ragda, watermelon<br><br>
+» tofu medu vadai, lime leaf gun powder, onion chutney<br><br>
+» baked paneer, coriander pesto, baby cucumber pickle<br><br>
+chicken meat balls, green chilli cream, truffle butter<br><br>
+ghee roast mutton boti, roomali roti pancake, chutneys<br><br>
+***<br><br>
+» rajasthani ker sangri paneer, smoked papad ki curry<br><br>
+» tempered ricotta vada, pao bhaji, kafir lime butter pao 'chowpatty in a bowl'<br><br>
+chettinad chicken keema, curry leaf lemon seviyan, sago puffs<br><br>
+braised lamb, kashmiri sour plum, morels, lotus root<br><br>
+grilled sea bass, sweet potato, goan mango curry<br><br>
+***<br><br>
+'old monk' rum ball, 70% valrhona chocolate<br><br>
+daulat ki chaat, roast almond, rose petal chikki<br><br>
+badam halwa pie, cranberries, cheeni malai ice cream<br><br>
+            warm doda burfi treacle tart, vanilla bean ice cream<br><br></p><br><br><br><br><br>
+            <!--<p style="font-family: cursive;text-align: center;opacity: 0.6">-->
+            <center><div style="border: 1px grey solid;width: 550px;"></div><p style="font-family: cursive;text-align: center;opacity: 0.6">
+                all main course dishes are served with indian accent kulchas and sides</p><div style="border: 1px grey solid;width: 550px;"></div></center>
+        <p style="font-family: cursive;text-align: center;opacity: 1">
+            <b>3 course menu</b></p>
+        <p style="font-family: cursive;text-align: center;opacity: 0.6">
+            (choose any one dish per course)<br>
+            veg ₹2600 per person, non veg ₹2800 per person<br> » vegetarian dishes<br>
+            some food items may contain traces of nuts, dairy or gluten. please ask your server for details.<br>
+            taxes & service charge extra</p><br><br><br><br>
+        <div style="border: 1px grey solid;opacity: 0.9;"></div>
+        
+        <div class="footer"></div>
+        <ul type="none" class="same1">
+             <li><a href="main.html">HOME</a></li>
+             <li><a href="about_us.html">ABOUT US</a></li>
+             <li><a>MENUS</a></li>
+             <li><a>NEWS</a></li>
+             <li><a>REACH US</a></li>
+             <li><img class="icon" src="facebook.jpg"> <img class="icon" src="twitter.png"> <img class="icon" src="insta.png"></li>
+             <li><a style="color:rgb(228,88,44);">NEW DELHI</a></li>
+             <li><a>NEW YORK</a></li>
+             <li><a>LONDON</a></li>
+             <li><a>ON LOCATION</a></li>
+        </ul>
+        <div class="last">
+        	<ul type="none" class="same2">
+             <li>COPYRIGHT 2020</li>
+             <li><a href="privacy_policy.html">PRIVACY POLICY</a></li>
+             <li><a href="terms&conditions.html">TERMS & CONDITIONS</a></li>
+             <li><a>COOKIE CONSENT</a></li>
+             <li><input style="background-color: rgba(60,60,60,0.1);width: 210px; height:30px;padding: 5px;" placeholder="SUBSCRIBE TO STAY UPDATED"> <button style="background-color:rgb(228,88,44); color: white; width: 150px; height:42px;padding: 5px; border: 0px solid orange;">Subscribe</button></li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <title>Lunch & Dinner Menu - Indian Accent New Delhi</title>
+        <style>
+            #navbar {
+                background-color: white;
+  position: fixed; /* Make it stick/fixed */
+  top: 0px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  height:100px;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+ align-self: center;
+}
+
+#navbar a:hover {
+  background-color: aliceblue;
+  color: orangered;
+}
+#nav{
+    letter-spacing: 5px;
+    font-size: 16px;
+}
+#b{
+    margin-left: 110px;
+    height: 70px;
+    width: 300px;
+    margin-top: 15px;
+}
+        
+        .footer{
+	height: 3px;
+	width: 100%;
+	background-color: rgba(60,60,60,0.1);
+}
+.same1{
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.same1 li{
+    color:rgb(191, 191, 191);
+    display:inline-block;
+    padding:16px;
+}
+.same1 a{
+	text-decoration: unset;
+	 color:rgb(191, 191, 191);
+}
+.icon{
+    height: 30px;
+    width: 30px;
+}
+.same1 a:hover{
+    color:rgb(228,88,44);
+    cursor: pointer;
+}
+.same2{
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.same2 li{
+    color:rgb(191, 191, 191);
+    display:inline-block;
+    padding-right: 52px;
+    padding-top: 15px;
+}
+.same2 a{
+	text-decoration: unset;
+	 color:rgb(191, 191, 191);
+}
+.same2 a:hover{
+    color:rgb(228,88,44);
+    cursor: pointer;
+}
+
+.last{
+    width:100%;
+    height:70px;
+    background-color: rgba(60,60,60,0.1);
+}
+            
+            #para{
+                font-family: cursive;text-align: center;opacity: 0.6;margin-top: 100px;letter-spacing: 2px;
+            }
+            #para1{
+                font-family: cursive;opacity: 0.6;margin-top: ;letter-spacing: 2px;
+                text-align: left;margin-left: 90px;margin-bottom:-5px;
+            }
+            #para2{
+                font-family: cursive;opacity: 0.8;letter-spacing: 2px;
+                float: right; text-align: left;margin-top: -1519px;margin-right: 230px;
+            }
+            #para3{
+                font-family: cursive;opacity: 0.6;letter-spacing: 2px;
+                float: right;text-align: left;margin-right: 145px;  
+            }
+            #para4{
+                font-family: cursive;opacity: 0.6;margin-top: 100px;letter-spacing: 2px;
+                float: right;text-align: left;margin-right: 30px; margin-top: -1645px;opacity: 1;
+            }
+            #para5{
+                font-family: cursive;opacity: 0.6;letter-spacing: 2px;
+                text-align: left; margin-top: -1640px;opacity: 1;margin-left: 580px;;
+            }
+            #para6{
+                font-family: cursive;text-align: center;opacity: 0.6;margin-top: 100px;letter-spacing: 2px;
+            }
+            #para7{
+                font-family: cursive;text-align: center;opacity: 0.6;margin-top: 100px;letter-spacing: 2px;
+            }
+        </style>
+    </head>
+    
+    <body >
+        <div id="navbar">
+  <a href="reservations.html"><span id="nav"> RESERVATIONS </span></a>
+ 
+  <a href="file:///C:/Documents/Javascript/Project-20200422T111828Z-001/Project/menu.html"><span id="nav"> MENUS </span></a>
+         <img id="b" src="m_logo.png">
+                </div>
+        <script>
+            // When the user scrolls down 30px from the top of the document, slide down the navbar
+            // When the user scrolls to the top of the page, slide up the navbar (80px out of the top view)
+            window.onscroll = function() {scrollFunction();scroll();};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+                document.getElementById("navbar").style.top = "0";
+                 } 
+            else {
+                    document.getElementById("navbar").style.top = "0px";
+                 }
+            }
+
+        </script><br><br><br>
+        <div style="border: 2px white solid ; height:100px;background-color: rgb(242,242,242);margin-top: 50px;text-align: center;padding-top: 35px;margin-left: -10px;margin-right: -8px;font-family: cursive;letter-spacing: 2px;"><h3 style="color: rgb(235,89,33)">BEVERAGES</h3></div><br><br><br><br> 
+        <div style="border: 0.5px rgb(224,224,224) solid;height: 1580px;width:1px;background-color:rgb(224,224,224);margin-left: 650px;"></div>       
+        <p id="para" style="text-align: left;margin-top: -1580px;margin-left: 210px;opacity: 0.8;color: rgb(235,89,33);">CHAMPAGNE</p><br>
+        
+<p id="para1" >
+    veuve cliquot ponsardin brut, nv,<br>champagne, france</p>
+        <br><br><p id="para1" style="margin-left: 210px;opacity:0.8;color: rgb(235,89,33);">SPARKLING</p><br><br><br><p id="para1">
+bepin de eto, prosecco superior, nv,<br>veneto, italy
+<br><br>
+chandon brut rose, nv, nashik, india
+<br><br>
+        sula vineyards brut, nv, nashik, india</p>
+        <br><br><br><p id="para1" style="margin-left: 150px;opacity:0.8;color: rgb(235,89,33);">FRESH AROMATIC WHITES</p><br><br><p id="para1">
+maison les alexandrins, viognier, 2018,<br>northern rhone valley, france
+<br><br>
+dr. l loosen bros, riesling, 2017,<br>mosel, germany
+<br><br>
+villa maria private bin, sauvignon blanc,<br>2018, marlborough, new zealand
+<br><br>
+corte giara igt, pinot grigio, 2017,<br>delle venezie, italy
+<br><br>
+        sula vineyards, riesling, 2019,<br>nashik, india</p>
+        <br><br><br><p id="para1" style="margin-left: 145px;opacity:0.8;color: rgb(235,89,33);">CRISP SUBTLE WHITES</p><br><br><p id="para1">
+maison louis jadot, bourgogne blanc,<br>chardonnay, 2017, burgundy, france
+<br><br>
+penfolds, chardonnay, 2015,<br>koonunga hill, australia
+<br><br>
+        fairview,goats do roam, white blend,<br>
+    2018, paarl, south africa<br><br>
+two oceans, chardonnay, 2017, western<br>cape, south africa<br><br>
+        sula vineyards, sauvignon blanc,<br>2019, nashik, india</p><br><br><br><p id="para1" style="margin-left: 200px;opacity:0.8;color: rgb(235,89,33);">ROSÉ</p><br><br><p id="para1">
+casa de mateus, nv, douro, portugal<br><br>
+        sula vineyards, the source,<br>grenache, 2019, nashik, india</p><br><br>
+        <p id="para2" style="color: rgb(235,89,33)">LIGHT FRUITY REDS</p>
+        
+<p id="para3" style="margin-top:-1450px;">
+folonari valpolicella, valpolicella blend,<br>doc, 2016, veneto, italy<br><br>sensi, chianti, sangiovese, 2017, docg,<br>tuscany, italy<br><br>
+grove ridge, merlot, 2015, california, usa<br><br>
+camas, pinot noir, 2018, burgundy, france<br><br>
+frontera, merlot, 2018, central valley, chile<br><br>
+    fairview, pinotage, 2017, paarl,<br>south africa<br><br></p>
+<p id="para3" style="margin-top:-1075px;color:rgb(235,89,33);opacity: 0.8;margin-right: 200px;">
+SAVOURY ELEGANT REDS</p><br><br><br><p id="para3" style="margin-top:-1055px;margin-right: 200px;">allegrini valpolicella classico,<br>valpolicella blend,<br>doc, 2017, veneto, italy<br><br>
+chateau ste. michelle, syrah, 2016,<br>columbia valley, usa<br><br>
+paul jaboulet aine, syrah, 2015,<br>hermitage, france<br><br>
+sensi, montepulciano, doc, 2017,<br>abruzzo, italy<br><br>
+grover zampa, la rèserve, cabernet<br>sauvignon & shiraz,<br>2016, nandi hills, india<br><br>
+luis felipe edwards, carmenere, 2018, <br>central valley, chile<br><br>
+rawson's retreat, shiraz and cabernet<br>sauvignon, 2016,<br>south eastern australia, australia<br><br></p><p id="para3" style="margin-top:-515px;color: rgb(235,89,33);opacity: 0.8;margin-right: 200px;">
+        RICH POWERFUL REDS</p><br><br><br><br><p id="para3" style="margin-top:-515px;margin-right: 165px;">
+chateau goumin, cabernet sauvignon<br>and merlot, 2016,<br>bordeaux, france<br><br>sula vineyards, rasa, cabernet sauvignon,<br>2018, nashik, india<br><br>
+argento malbec, 2018, mendoza, argentina<br><br>
+sula vineyards, dindori reserve, shiraz,<br>2019, nashik, india<br><br><p id="para3" style="margin-top:-215px;color: rgb(235,89,33);opacity: 0.8;margin-right: 220px;">
+        DESSERT WINES</p><br><br><br><br><p id="para3" style="margin-top:-215px;margin-right: 225px;">sula vineyards, late harvest chenin<br>blanc, 2018, nashik, india</p>
+<p id="para4">
+    2000<br><br><br>1500<br><br><br>1500<br><br>1400<br><br>1200<br><br>1400<br><br><br><br><br><br><br><br><br><br>2400<br><br><br>2000<br><br><br>1600<br><br><br>1500<br><br><br>1200<br><br><br>1200<br><br><br><br>1100<br><br><br><br><br><br><br><br>1500<br><br><br>1700<br><br><br>1400<br><br>1000<br><br><br><br><br><br><br><br><br>800
+        </p> 
+<p id="para5">
+4500<br><br><br><br><br><br><br><br>1800<br><br><br>1700<br><br>1000<br><br><br><br><br><br><br>1800<br><br><br>1700<br><br><br>1500<br><br><br>1000<br><br><br>1000<br><br><br><br><br><br><br><br><br>1600<br><br><br>1500<br><br><br>1200<br><br><br>1200<br><br><br>950<br><br><br><br><br><br><br>1200<br><br><br>1100
+        </p> 
+<br>
+
+<br><br><br><br>
+<p style="text-align: center;font-family: cursive;letter-spacing: 2px;">vintages are subject to change, all glasses are 150ml,unless otherwise stated</p><br><br><br>
+<br><br><br><div class="footer"></div>
+        <ul type="none" class="same1">
+             <li><a href="main.html">HOME</a></li>
+             <li><a href="about_us.html">ABOUT US</a></li>
+             <li><a>MENUS</a></li>
+             <li><a>NEWS</a></li>
+             <li><a>REACH US</a></li>
+             <li><img class="icon" src="facebook.jpg"> <img class="icon" src="twitter.png"> <img class="icon" src="insta.png"></li>
+             <li><a style="color:rgb(228,88,44);">NEW DELHI</a></li>
+             <li><a>NEW YORK</a></li>
+             <li><a>LONDON</a></li>
+             <li><a>ON LOCATION</a></li>
+        </ul>
+        <div class="last">
+        	<ul type="none" class="same2">
+             <li>COPYRIGHT 2020</li>
+             <li><a href="privacy_policy.html">PRIVACY POLICY</a></li>
+             <li><a href="terms&conditions.html">TERMS & CONDITIONS</a></li>
+             <li><a>COOKIE CONSENT</a></li>
+             <li><input style="background-color: rgba(60,60,60,0.1);width: 210px; height:30px;padding: 5px;" placeholder="SUBSCRIBE TO STAY UPDATED"> <button style="background-color:rgb(228,88,44); color: white; width: 150px; height:42px;padding: 5px; border: 0px solid orange;">Subscribe</button></li>
+        </ul>
+        </div><br>
+    </body>
+</html>

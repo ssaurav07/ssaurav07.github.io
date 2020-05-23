@@ -1,0 +1,164 @@
+<html>
+<head>
+    <title>Chef's Tasting Menu | Indian Accent</title>
+    <style>
+        #navbar {
+            background-color: white;
+  position: fixed; /* Make it stick/fixed */
+  top: 0px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  height:100px;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+ align-self: center;
+}
+
+#navbar a:hover {
+  background-color: aliceblue;
+  color: orangered;
+}
+#nav{
+    letter-spacing: 5px;
+    font-size: 16px;
+}
+#b{
+    margin-left: 110px;
+    height: 70px;
+    width: 300px;
+    margin-top: 15px;
+}
+        
+        .footer{
+	height: 3px;
+	width: 100%;
+	background-color: rgba(60,60,60,0.1);
+}
+.same1{
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.same1 li{
+    color:rgb(191, 191, 191);
+    display:inline-block;
+    padding:16px;
+}
+.same1 a{
+	text-decoration: unset;
+	 color:rgb(191, 191, 191);
+}
+.icon{
+    height: 30px;
+    width: 30px;
+}
+.same1 a:hover{
+    color:rgb(228,88,44);
+    cursor: pointer;
+}
+.same2{
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.same2 li{
+    color:rgb(191, 191, 191);
+    display:inline-block;
+    padding-right: 52px;
+    padding-top: 15px;
+}
+.same2 a{
+	text-decoration: unset;
+	 color:rgb(191, 191, 191);
+}
+.same2 a:hover{
+    color:rgb(228,88,44);
+    cursor: pointer;
+}
+
+.last{
+    width:100%;
+    height:70px;
+    background-color: rgba(60,60,60,0.1);
+}
+        #para{
+                font-family: cursive;text-align: center;opacity: 0.6;margin-top: 100px;letter-spacing: 2px;
+            }
+        #para1{
+                font-family: cursive;opacity: 0.6;margin-top: 0px;letter-spacing: 2px;text-align: left;margin-left: 90px;margin-bottom:-5px;
+            }
+        #para2{
+                font-family: cursive;opacity: 0.6;letter-spacing: 2px;color: rgb(235,89,33);text-align: left;margin-left: 90px;margin-bottom:-5px;
+            }
+        #para3{font-family: cursive;opacity: 0.6;letter-spacing: 2px;text-align: left;margin-left: 700px;margin-top:-5px;
+        }
+        #para4{
+            font-family: cursive;opacity: 0.6;letter-spacing: 2px;text-align: left;color:rgb(235,89,33);margin-left: 700px;
+            
+        }
+    </style>
+    </head>
+    <body >
+        <div id="navbar">
+  <a href="reservations.html"><span id="nav"> RESERVATIONS </span></a>
+ 
+  <a href="file:///C:/Documents/Javascript/Project-20200422T111828Z-001/Project/menu.html"><span id="nav"> MENUS </span></a>
+         <img id="b" src="m_logo.png">
+                </div>
+        <script>
+            // When the user scrolls down 30px from the top of the document, slide down the navbar
+            // When the user scrolls to the top of the page, slide up the navbar (80px out of the top view)
+            window.onscroll = function() {scrollFunction();scroll();};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+                document.getElementById("navbar").style.top = "0";
+                 } 
+            else {
+                    document.getElementById("navbar").style.top = "0px";
+                 }
+            }
+
+        </script>
+        <div style="border: 2px white solid ; height:100px;background-color: rgb(242,242,242);margin-top: 150px;text-align: center;padding-top: 35px;margin-left: -10px;margin-right: -8px;font-family: cursive;letter-spacing: 2px;"><h3 style="color: rgb(235,89,33)">CHEF'S TASTING MENU</h3></div><br><br><br><br> 
+        <div style="border: 0.5px rgb(224,224,224) solid;height: 1280px;width:1px;background-color:rgb(224,224,224);margin-left: 650px;"></div>
+        <p id="para" style="text-align: left;margin-top: -1275px;margin-left: 200px;">VEGETARIAN</p>
+        <p id="para" style="float: right; text-align: left;margin-top: -35px;margin-right: 290px;">NON-VEGETARIAN</p><br>
+        <p id="para1">
+            streets of india<p id="para2">chandon brut, nv, nashik, india</p><br><br><p id="para1">'puri aloo', sweet pumpkin, pickle</p><p id="para2">camas, pinot noir, 2018, languedoc roussillon,<br>france</p><br><br><p id="para1">tofu medu vadai, lime leaf gun powder, sambhar cream</p><p id="para2">corte giara, igt, pinot grigio, 2017, delle venezie, italy</p><br><br><p id="para1">pulled jackfruit phulka taco, chutneys</p><p id="para2">sensi, chianti, sangiovese, 2017, docg, tuscany, italy</p><br><br><p id="para1">anar & churan kulfi sorbet<br><br>saffron cauliflower, quinoa, salan</p><p id="para2">villa maria private bin, merlot & cabernet<br> sauvignon, 2015, hawkes bay, new zealand</p><br><p id="para1">or<br><br>ker sangri paneer, smoked papad curry</p><p id="para2">nederburg, sauvignon blanc, 2018,<br>western cape, south africa</p><br><br><p id="para1">black dairy dal<br>smoked eggplant raita<br>wild mushroom kulcha, truffle oil drizzle<br>pearl millet roti, fresh hand churned butter<br><br>chilli peanut ice cream cornet<br>daulat ki chaat, roast almonds, rose petal<br>chikki<br>warm doda burfi treacle tart, homemade<br>vanilla bean ice cream</p><p id="para2">sula vineyards, late harvest chenin blanc,<br>2016, nashik, india</p><br><br><br><p id="para1" style="opacity: 1">chef’s tasting menu</p><br><p id="para1"><₹3600 per person<br>additional ₹3900 per person for 6 half glasses<br>(75ml) of wine<br>(premium wine pairing at ₹8500 also available.<br>Please ask your server for details)<br>some food items may contain traces of nuts,<br>dairy or gluten.<br>please ask your server for details.<br>taxes & service charge extra</p>
+        
+        <p id="para3" style="margin-top: -1200px;">
+            streets of india<p id="para4">chandon brut, nv, nashik, india</p><br><p id="para3">'puri aloo', sweet pumpkin, pickle</p><p id="para4">'puri aloo', sweet pumpkin, pickle</p><br><p id="para3">chilli crab, sago pongal, peanuts</p><p id="para4">maison louis jadot, bourgogne blanc, chardonnay,<br>2017, burgundy, france</p><br><p id="para3">pulled jackfruit phulka taco, chutneys</p><p id="para4">sensi, chianti, sangiovese, 2017, docg, tuscany, italy</p><br><p id="para3">anar & churan kulfi sorbet<br><br>roast chicken, smoked papad curry</p><p id="para4">paul jaboulet aine, syrah, 2015, hermitage, france</p><p id="para3">or<br><br>grilled prawns, sweet potato, goan mango curry</p><p id="para4">dr. l loosen bros, riesling, 2017, mosel, germany</p><br><br><p id="para3">black dairy dal<br>smoked eggplant raita<br>wild mushroom kulcha, truffle oil drizzle<br>pearl millet roti, fresh hand churned butter<br><br>chilli peanut ice cream cornet<br>daulat ki chaat, roast almonds, rose petal<br>chikki<br>warm doda burfi treacle tart, homemade<br>vanilla bean ice cream</p><p id="para4">sula vineyards, late harvest chenin blanc,<br>2016, nashik, india</p><br><br><p id="para3" style="opacity: 1">chef’s tasting menu</p><p id="para3"><₹3600 per person<br>additional ₹3900 per person for 6 half glasses<br>(75ml) of wine<br>(premium wine pairing at ₹8500 also available.<br>Please ask your server for details)<br>some food items may contain traces of nuts,<br>dairy or gluten.<br>please ask your server for details.<br>taxes & service charge extra</p>
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="footer"></div>
+        <ul type="none" class="same1">
+             <li><a href="main.html">HOME</a></li>
+             <li><a href="about_us.html">ABOUT US</a></li>
+             <li><a>MENUS</a></li>
+             <li><a>NEWS</a></li>
+             <li><a>REACH US</a></li>
+             <li><img class="icon" src="facebook.jpg"> <img class="icon" src="twitter.png"> <img class="icon" src="insta.png"></li>
+             <li><a style="color:rgb(228,88,44);">NEW DELHI</a></li>
+             <li><a>NEW YORK</a></li>
+             <li><a>LONDON</a></li>
+             <li><a>ON LOCATION</a></li>
+        </ul>
+        <div class="last">
+        	<ul type="none" class="same2">
+             <li>COPYRIGHT 2020</li>
+             <li><a href="privacy_policy.html">PRIVACY POLICY</a></li>
+             <li><a href="terms&conditions.html">TERMS & CONDITIONS</a></li>
+             <li><a>COOKIE CONSENT</a></li>
+             <li><input style="background-color: rgba(60,60,60,0.1);width: 210px; height:30px;padding: 5px;" placeholder="SUBSCRIBE TO STAY UPDATED"> <button style="background-color:rgb(228,88,44); color: white; width: 150px; height:42px;padding: 5px; border: 0px solid orange;">Subscribe</button></li>
+        </ul>
+        </div><br>
+    </body>
+</html>
