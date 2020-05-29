@@ -10,15 +10,19 @@
         <style>
             
             body{
-                width: 100%;background-color: white;
+                width: 99.4%;background-color: beige;
+                display: flex;
+                
+                
             }
             div{
                 background-color: black;
                 background-position: center;
-                width: 100%;
+                width: 98.9%;
                 border: 2px solid white;
                 text-align: center;
                 color: rgb(235,89,33);
+                
                 
                 
             }
@@ -31,12 +35,38 @@
             .div2{
                 font-size: 1.5em;
                 background-image:none;
+                
+                
             }
             
-            @media (orientation:landscape)
+            iframe{
+                width:49.2%;
+            }
+            
+            /*@media (orientation:landscape)
             {
                 body{
                     background-color: orange;
+                }
+                div{
+                    display: none;
+                }
+            }*/
+            
+            @media (max-width:500px)
+            {
+                body{
+                    background-color: fuchsia;
+                    flex-direction: column;
+                }
+                
+                .div2{
+                    display: flex;
+                    flex-direction: column;
+                }
+                iframe{
+                    width:100%;
+                    margin-top: 20px;
                 }
             }
             
@@ -53,7 +83,13 @@
         </div>
         <br><br>        
         <div class="div2">
-            <h1>Must Watch Videos</h1>
+            <h1><u>Must Watch Videos</u></h1><br>
+                
+            <iframe src="https://www.youtube.com/embed/RaWK5cR2mSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <iframe src="https://www.youtube.com/embed/OAxgJbGFVRs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+                
             
         </div>
         
