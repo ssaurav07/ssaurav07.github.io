@@ -14,15 +14,19 @@
                 border:2px solid rgb(189,19,91);
                 background-color: rgb(179,45,21);
                 color: yellow;
+                font-size: 2em;
                 text-align: center;
                 padding: 12px;
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
                 
             }
+            #img1{
+                width: 20%;
+            }
             
-            img{
-                width:20%;
+            #img2{
+                width:15%;
             }
             
             nav{
@@ -53,6 +57,22 @@
                 border-bottom: 4px solid black;
             }
             
+            @media (max-width:1000px)
+            {
+             nav ul{
+                    flex-direction: column;
+                    font-size: 30;
+                }
+                
+                div{
+                  
+                    font-size: 1.1em;
+                }
+                #img1,#img2{
+                    width: 28%;
+                    height: 250;
+                }
+            }
             
             @media (max-width:550px)
             {
@@ -60,19 +80,31 @@
                     flex-direction: column;
                     font-size: 30;
                 }
-                img{
-                    width: 5%;
+                
+                #img1{
+                    width: 100%;
+                    height: 280;
+                }
+                
+                div{
+                   flex-direction: column;
+                    font-size: 1em;
+                }
+                
+                #img2
+                {
+                    display: none;
                 }
                 
             }
             
-            
+        
         </style>
     </head>
     
     <body>
         <div>
-            <img src="swastik.png">
+            <img src="ganesha%20(2).png" id="img1">
             <span>
             
                 <h1>Subham Grih Udyog</h1>
@@ -88,7 +120,7 @@
             
             </span>
              
-            <img src="swastik.png">
+            <img src="swastik.png" id="img2">
         </div>
     </body>
 </html>
