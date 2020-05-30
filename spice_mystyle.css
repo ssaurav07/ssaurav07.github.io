@@ -109,20 +109,85 @@ body{
                 
             }
 #dryfruit{
-    padding: 20px;
+    padding: 35px;
 }
 
 #allspice{
     padding: 40px;
-}
+    }
 
-@media (max-width:550px)
+@media (max-width:750px)
 {
     .container2{
         flex-direction: column-reverse;
+        font-family: sans-serif;
     }
     
     #img3{
         width:100%;
+        padding: 3px;
     }
+}
+
+.container34{
+    display: flex;
+    padding-right: 25;
+}
+
+
+.container3{
+                
+                width:50%;
+                display: flex;
+                justify-content: space-around;
+                text-align: justify;
+                font-family: cursive;
+                font-size: 15px;
+                color: rgb(179,45,21);
+                
+            }
+#haldi_img{
+    width: 50%;
+}
+
+#haldispan{
+    padding: 40;
+}
+
+@media (max-width:750px)
+{
+    .container3{
+        flex-direction: column-reverse;
+    }
+    
+    .container34
+    {
+        flex-direction: column;
+    }
+    
+    #haldi_img{
+        width: 200%;
+        padding: 10;
+    }
+    #haldispan{
+        width: 200%;
+        padding: 10;
+    }
+}
+
+#ul2{
+    color: rgb(179,45,21);
+}
+
+.afooter{
+    color: black;
+}
+
+.afooter:hover{
+    color: rgb(179,45,21)
+}
+
+#head{
+    font-family: fantasy;
+    font-size: 30;
 }
