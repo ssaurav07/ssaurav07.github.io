@@ -164,6 +164,7 @@ body{
     .container34
     {
         flex-direction: column;
+        margin-left: 1.1em
     }
     
     #haldi_img{
@@ -242,6 +243,7 @@ body{
 .social{
     display: flex;
     justify-content: space-around;
+    margin: 0;
 }
 
 .social1{
@@ -255,6 +257,7 @@ body{
     .social{
         flex-direction: column;
         text-align: center;
+        margin: 0;
     }
 }
 
@@ -262,6 +265,7 @@ body{
         display: flex;
         justify-content: space-around;
         text-align: center;
+        margin:0;
 }
 
 #field1,#field2,#field3{
@@ -275,6 +279,7 @@ body{
 
 #field1{
     background-image: url(haldi.jpg);
+    background-size:cover;
     animation-name: masale;
     animation-duration:30s;
 animation-delay:2s;
@@ -285,6 +290,7 @@ animation-timing-function: linear;
 
 #field2{
     background-image: url(kaju.jpg);
+    background-size:cover;
     animation-name: dryfruits;
     animation-duration:30s;
 animation-delay:2s;
@@ -294,6 +300,13 @@ animation-iteration-count: infinite;
 
 #field3{
     
+    background-image: url(owner1.png);
+    background-size:cover;
+    animation-name: owner;
+    animation-duration:30s;
+animation-delay:2s;
+animation-iteration-count: infinite;
+
 }
 
 #legend{
@@ -329,19 +342,23 @@ animation-iteration-count: infinite;
 
 @keyframes owner{
  
-    0%{background-image: url(black_salt.jpg)}
-    25%{background-image: url(dhania.jpg)}
-    50%{background-image: url(mirchi.jpg)}
-    75%{background-image: url(mixmasala.jpg)}
-}
+    33%{background-image: url(owner2.jpg)}
+    66%{background-image: url(owner3.jpg)}
+    100%{background-image: url(owner4.jpg)}
+    }
 
 @media (max-width:550px)
 {
     .gallery{
         flex-direction: column;
+        margin: 0;
     }
     
     #field1,#field2,#field3{
         width: 95%;
+    }
+    
+    #field2,#field3{
+        margin-top: 20px;
     }
 }
