@@ -257,3 +257,91 @@ body{
         text-align: center;
     }
 }
+
+.gallery{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+}
+
+#field1,#field2,#field3{
+    width: 30%;
+    height: 250;
+    padding: 15;
+    border: 2px solid rgb(179,45,21);
+    box-shadow: 0px 0px 5px 0px yellow;
+}
+
+
+#field1{
+    background-image: url(haldi.jpg);
+    animation-name: masale;
+    animation-duration:30s;
+animation-delay:2s;
+animation-iteration-count: infinite;
+animation-direction: normal;
+animation-timing-function: linear;
+}
+
+#field2{
+    background-image: url(kaju.jpg);
+    animation-name: dryfruits;
+    animation-duration:30s;
+animation-delay:2s;
+animation-iteration-count: infinite;
+
+}
+
+#field3{
+    
+}
+
+#legend{
+    width:;
+}
+
+.gallery_span{
+    background-color:rgb(179,45,21) ;
+    color: yellow ; 
+    border: 2px red solid;
+    padding: 0.2em;
+}
+
+@keyframes masale{
+ 
+    0%{background-image: url(black_salt.jpg)}
+    25%{background-image: url(dhania.jpg);
+    background-position: center;}
+    50%{background-image: url(mirchi.jpg);
+    background-position: center;}
+    75%{background-image: url(mixmasala.jpg)}
+}
+
+@keyframes dryfruits{
+ 
+    0%{background-image: url(almonds.jpg)}
+    25%{background-image: url(peanut.jpg)}
+    50%{background-image: url(walnut.jpg);
+    background-position: center;}
+    75%{background-image: url(kishmish.jpg);
+        background-position: center;}
+}
+
+@keyframes owner{
+ 
+    0%{background-image: url(black_salt.jpg)}
+    25%{background-image: url(dhania.jpg)}
+    50%{background-image: url(mirchi.jpg)}
+    75%{background-image: url(mixmasala.jpg)}
+}
+
+@media (max-width:550px)
+{
+    .gallery{
+        flex-direction: column;
+    }
+    
+    #field1,#field2,#field3{
+        width: 95%;
+    }
+}
