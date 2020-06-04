@@ -384,11 +384,30 @@ animation-iteration-count: infinite;
 {
     .container_aboutUs{
         flex-direction: column;
-        margin-left: 1em;
+        margin-left: 0.5em;
+        width: 99.9%
         
     }
     
     #aboutUs1,#map{
-        width: 100%;
+        width: 99%;
+    }
+}
+
+
+#variety,#gallery,#locate_US{
+    
+    border: 2px beige solid ; text-align: center ; font-family: cursive;font-size: 35px;background-color: rgb(179,45,21);height:1.6em;;color: yellow;width: 100%;
+}
+
+@media{
+    
+    #gallery,#locate_US{
+        padding: 9;
+    }
+    
+    #variety{
+        padding: 9;
+        height: 2.8em;
     }
 }
