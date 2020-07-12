@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>Let's Do BootStrap</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+        <script src="https://kit.fontawesome.com/1528c671a9.js" crossorigin="anonymous"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="bootstrap.css">
+        
+        
+        <link rel="stylesheet" type="text/css" href="boot_style.css">
+        
+    </head>
+    
+    <body>
+        
+    <!-- NavBar -->
+        
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#"><i class="fas fa-camera-retro"></i> PhotuGrapher</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            FestFotos 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Confluence</a>
+              <a class="dropdown-item" href="#">Techspardha</a>
+              <a class="dropdown-item" href="#">Utkarsh</a>
+              <a class="dropdown-item" href="#">Citius</a>
+              <a class="dropdown-item" href="#">Convocation</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Campus Visit</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+</nav>
+        
+<!-- JumboTroon --> 
+    <div class="jumbotron jumbotron-fluid">
+      <h1 class="display-4">Hey, Photugraphers!</h1>
+      <p class="lead"> Right now you're looking at the unofficial page of Photography Club , NIT Kurukshetra.<br>The page has been created by Mr. Suman Saurav  for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>This page has been developed using Bootstrap and all the enthusiasm...
+      <a class="btn btn-primary btn-sm" href="#" role="button">Read more</a>
+        </p>
+    </div>
+        
+ <!-- Gallery_Grid -->
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-3 col-md-6" >
+                <img src="photog1.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+            </div>
+            
+            <div class="col col-lg-6 col-md-6" >
+                <div class="row" style="padding-top: 1em">
+                    <div class="col col-lg-6 col-md-6" >       
+                        <img src="photog2.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+                    </div>
+                    <div class="col col-lg-6 col-md-6" >
+                        <img src="photog3.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+                    </div>
+                    
+                    <div class="col col-lg-6 col-md-6" >       
+                        <img src="photog6.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+                    </div>
+                    <div class="col col-lg-6 col-md-6" >
+                        <img src="photog7.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col col-lg-3 col-md-6" >
+                <img src="photog4.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+            </div>
+            <div class="col col-lg-3 col-md-6" >
+                <img src="photog5.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+            </div>
+            <div class="col col-lg-6 col-md-6" >
+                <div class="row" style="padding-top: 1em">
+                    <div class="col col-lg-6 col-md-12" >       
+                        <img src="photog9.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+                    </div>
+                    <div class="col col-lg-6 col-md-12" >
+                        <img src="photog10.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+                    </div>
+                    
+                    <div class="col col-lg-6 col-md-12" >       
+                        <img src="photog11.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+                    </div>
+                    <div class="col col-lg-6 col-md-12" >
+                        <img src="photog12.jpg" class="img-fluid img-thumbnail" alt="Responsive image">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-6" >
+                <img src="photog8.jpg" class="img-fluid img-thumbnail" id="foto_resize" alt="Responsive image">
+            </div>
+        </div>
+        
+    </div>
+        
+        
+<!-- Resources -->        
+    <script src="jquery-3.5.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        
+        
+
+    </body>
+</html>
