@@ -1,28 +1,6 @@
 var easy = document.getElementById("easy_span");
 var hard = document.getElementById("hard_span");
 
-/*
-easy.addEventListener("mouseover",function(){
-    this.style.backgroundColor="blueviolet";
-    this.style.color="white";   
-});
-
-hard.addEventListener("mouseover",function(){
-    this.style.backgroundColor="blueviolet";
-    this.style.color="white";   
-});
-
-easy.addEventListener("mouseout",function(){
-    this.style.backgroundColor="white";
-    this.style.color="blueviolet";   
-});
-
-hard.addEventListener("mouseout",function(){
-    this.style.backgroundColor="white";
-    this.style.color="blueviolet";   
-});
-*/
-
 easy.addEventListener("click",function(){
     this.style.backgroundColor="blueviolet";
     this.style.color="white";
@@ -36,6 +14,21 @@ hard.addEventListener("click",function(){
     easy.style.backgroundColor="white";
     easy.style.color="blueviolet";
 });
+
+function playAudio(check)
+{
+    var audio=new Audio();
+    
+    if(check=="no")
+        {
+            audio.src="wrong.mp3";
+        }
+    else{
+        audio.src="right.mp3";
+    }
+    
+    audio.play();
+}
 
 function genRandomColor()
 {
@@ -55,7 +48,7 @@ var newColor=document.getElementById("new_color_span");
                               
 function color_change(){
        
-    document.getElementById("new_color_span").textContent="NEW COLORS";
+    newColor.textContent="NEW COLORS";
     document.getElementById("tryAgain").textContent="";
     document.querySelector(".head_div").style.backgroundColor="blueviolet";
         var random_number=(Math.floor(Math.random()*6));
@@ -82,7 +75,8 @@ for(var i=0;i<(colum_length);i++){
             
             if(clicked_color== match_color)
                 {
-                    alert("RIGHT ! RIGHT  ! RIGHT !");
+                    playAudio("yes");
+                    setTimeout(function(){alert("RIGHT ! RIGHT  ! RIGHT !");},1000);
                     
                     for(var i=0;i<(colum_length);i++){
                     colum[i].style.backgroundColor=match_color;
@@ -92,12 +86,13 @@ for(var i=0;i<(colum_length);i++){
                     
                     document.getElementById("tryAgain").textContent="Well Done!";
                     
-                    document.getElementById("new_color_span").textContent="PLAY AGAIN?";
+                    newColor.textContent="PLAY AGAIN?";
                     
                 }
             
             else{
-                alert("WRONG ! WRONG ! WRONG !");
+                playAudio("no");
+                setTimeout(function(){alert("WRONG ! WRONG ! WRONG !");},1000);
                 document.getElementById("tryAgain").textContent="Try Again!";
                 this.style.backgroundColor="rgb(4,24,0)";
             }
