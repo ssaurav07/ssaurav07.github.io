@@ -76,7 +76,7 @@ for(var i=0;i<(colum_length);i++){
             if(clicked_color== match_color)
                 {
                     playAudio("yes");
-                    setTimeout(function(){alert("RIGHT ! RIGHT  ! RIGHT !");},1000);
+                    setTimeout(function(){alert("RIGHT ! RIGHT  ! RIGHT !");},500);
                     
                     for(var i=0;i<(colum_length);i++){
                     colum[i].style.backgroundColor=match_color;
@@ -92,7 +92,7 @@ for(var i=0;i<(colum_length);i++){
             
             else{
                 playAudio("no");
-                setTimeout(function(){alert("WRONG ! WRONG ! WRONG !");},1000);
+                setTimeout(function(){alert("WRONG ! WRONG ! WRONG !");},500);
                 document.getElementById("tryAgain").textContent="Try Again!";
                 this.style.backgroundColor="rgb(4,24,0)";
             }
