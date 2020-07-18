@@ -1,315 +1,116 @@
 <html>
-<head><title>Gallery || Indian Accent Restaurant || New Delhi </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/gif" href="topicon.png">
-    
-    <style>
-        #navbar {
-            background-color: white;
-  position: fixed; /* Make it stick/fixed */
-  top: 0px; /* Hide the navbar 50 px outside of the top view */
-  width: 100%; /* Full width */
-  height:100px;
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
-}
-
-/* Style the navbar links */
-#navbar a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 30px;
-  text-decoration: none;
-  letter-spacing: 0.5px;
- align-self: center;
-}
-
-#navbar a:hover {
-    background-color: aliceblue;
-  color: orangered;
-}
-#nav{
-    letter-spacing: 5px;
-    font-size: 16px;
-}
-#b{
-    margin-left: 110px;
-    height: 70px;
-    width: 300px;
-    margin-top: 15px;
-}
-        #container1{
-            border:2px solid white;
-            width: 800;
-            height: 500;
-            margin-left: 250px;
-            margin-top: 50px;
-        }
-        #container2{
-            border:2px solid white;
-            width: 770;
-            height: 150;
-            margin-left: 274px;
-        }
+    <head>
+        <title>HOME || SsQUARE wEb dEvEoPmEnT</title>
         
-        .image{
-            width:750px;
-            margin-left: 25px;
-        }
-        #scroll
-        {
-            margin-top: -250px;
-            font-size: 35px;
-            
-        }
-            .prev,
-            .next {
-                color:grey;
-                cursor: pointer;
-                
-                  }
-        .next {
-            right: 0;
-            float: right;
-            display: block;
-            margin-right: -25px;
-            }
-        .prev{
-            margin-left: -25px;
-        }
-
-        .prev:hover,
-        .next:hover {
-            
-                color: rgba(0, 0, 0, 0.8);
-                
-            }
-        .ntext{
-            /*background-color: black;*/
-            color: white;
-            
-        }
-        .footer{
-	height: 3px;
-	width: 100%;
-	background-color: rgba(60,60,60,0.1);
-}
-.same1{
-  margin-left: 25px;
-  margin-top: 10px;
-}
-.same1 li{
-    color:rgb(191, 191, 191);
-    display:inline-block;
-    padding:16px;
-}
-.same1 a{
-	text-decoration: unset;
-	 color:rgb(191, 191, 191);
-}
-.icon{
-    height: 30px;
-    width: 30px;
-}
-.same1 a:hover{
-    color:rgb(228,88,44);
-    cursor: pointer;
-}
-.same2{
-  margin-left: 0px;
-  margin-top: 0px;
-}
-.same2 li{
-    color:rgb(191, 191, 191);
-    display:inline-block;
-    padding-right: 52px;
-    padding-top: 15px;
-}
-.same2 a{
-	text-decoration: unset;
-	 color:rgb(191, 191, 191);
-}
-.same2 a:hover{
-    color:rgb(228,88,44);
-    cursor: pointer;
-}
-
-.last{
-    width:100%;
-    height:70px;
-    background-color: rgba(60,60,60,0.1);
-}
-    </style>
-    
-    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+        <script src="https://kit.fontawesome.com/1528c671a9.js" crossorigin="anonymous"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="bootstrap.css">
+        
+        
+        <link rel="stylesheet" type="text/css" href="homePage.css">
+        
     </head>
+    
     <body>
         
-        <div id="navbar">
-  <a href="reservations.html"><span id="nav"> RESERVATIONS </span></a>
- 
-  <a href="https://ssaurav07.github.io/menu"><span id="nav"> MENUS </span></a>
-         <img id="b" src="m_logo.png">
-                </div>
-        <script>
-            // When the user scrolls down 30px from the top of the document, slide down the navbar
-            // When the user scrolls to the top of the page, slide up the navbar (80px out of the top view)
-            window.onscroll = function() {scrollFunction();scroll();};
+        <nav class="navbar navbar-expand-md navbar-dark shadow-lg mb-3">
+          <a class="navbar-brand" href="#"><i class="fas fa-hat-cowboy"></i> SsQUARE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            function scrollFunction() {
-            if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-                document.getElementById("navbar").style.top = "0";
-                 } 
-            else {
-                    document.getElementById("navbar").style.top = "0px";
-                 }
-            }
-
-        </script>
-        <br><br><br><br><br><br><br><br>    
-        <p style="margin-top: 0px"><a id="mess" style="color: rgb(235,89,33);margin-left: 300px;margin-top: 200px;font-family:cursive;">GALLERY</a> 
-            <a style="color: rgb(235,89,33);float:right;margin-right: 300px;font-family:cursive;">IMAGES</a></p>
-        
-        <div id="container1">
-            <div class="mySlides">
-                <div class="ntext">1/6</div>
-            <img class="image" src="R1.jpg" alt="Image1" height="480" width="750">
-            </div>
-            
-            <div class="mySlides">
-                <div class="ntext">2/6</div>
-            <img class="image" src="R2.jpg" alt="Image1" height="480" width="800">
-            </div>
-            
-            <div class="mySlides">
-                <div class="ntext">3/6</div>
-            <img class="image" src="R3.jpg" alt="Image1" height="480" width="800">
-            </div>
-            
-            <div class="mySlides">
-                <div class="ntext">4/6</div>
-            <img class="image" src="R4.jpg" alt="Image1" height="480" width="800">
-            </div>
-            
-            <div class="mySlides">
-                <div class="ntext">5/6</div>
-            <img class="image" src="R5.jpg" alt="Image1" height="480" width="800">
-            </div>
-            
-            <div class="mySlides">
-                <div class="ntext">6/6</div>
-            <img class="image" src="R6.jpg" alt="Image1" height="480" width="800">
-            </div>
-            
-            <p id="scroll"> <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a></p>
-            
-        </div>
-        <div id="container2">
-            <row id="row">
-                <column >
-                    <img class="thumbnail" src="s1.jpg" alt="img1" height="100" width="147" onclick="showThumb(0)">
-                </column>
-                <column>
-                    <img class="thumbnail" src="R2.jpg" alt="img1" height="100" width="147" onclick="showThumb(1)">
-                </column>
-                <column>
-                    <img class="thumbnail" src="R3.jpg" alt="img1" height="100" width="147" onclick="showThumb(2)">
-                </column> 
-                <column>
-                    <img class="thumbnail" src="R4.jpg" alt="img1" height="100" width="147" onclick="showThumb(3)">
-                </column>
-                <column>
-                    <img class="thumbnail" src="R5.jpg" alt="img1" height="100" width="147" onclick="showThumb(4)">
-                </column>
-               <!-- <column>
-                    <img src="R6.jpg" alt="img1" height="100" width="100">
-                </column> 
-                <column>
-                    <img src="R7.jpg" alt="img1" height="100" width="100">
-                </column> -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#self">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            My WORK 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#" target="_blank"><span id="yes"><i class="far fa-clone fas-dropdown"></i></span>Patatap Clone</a>
+              <a class="dropdown-item" href="Color_Guess_game.html" target="_blank"><i class="fas fa-gamepad fas-dropdown"></i>COLOR GUESS GAME</a>
+              <a class="dropdown-item" href="ToDoList.html" target="_blank"><i class="fas fa-pencil-alt fas-dropdown"></i>To DO List </a>
+              <a class="dropdown-item" href="photog.html" target="_blank"><i class="fas fa-camera fas-dropdown"></i>PhotuG</a>
+              <a class="dropdown-item" href="spice.html" target="_blank"><i class="fas fa-pepper-hot fas-dropdown"></i>Subham Grih Udyog</a>
+              <a class="dropdown-item" href="spice.html" target="_blank"><i class="fas fa-utensils fas-dropdown"></i>Restaurant || Indian Accent</a> 
                 
-            </row>
-        </div>
-        <div class="footer"></div>
-        <ul type="none" class="same1">
-             <li><a href="main.html">HOME</a></li>
-             <li><a href="about_us.html">ABOUT US</a></li>
-             <li><a>MENUS</a></li>
-             <li><a>NEWS</a></li>
-             <li><a>REACH US</a></li>
-             <li><img class="icon" src="facebook.jpg"> <img class="icon" src="twitter.png"> <img class="icon" src="insta.png"></li>
-             <li><a style="color:rgb(228,88,44);">NEW DELHI</a></li>
-             <li><a>NEW YORK</a></li>
-             <li><a>LONDON</a></li>
-             <li><a href="private_hire.html">PRIVATE HIRE</a></li>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="fas fa-hammer fas-dropdown"></i>Under Development</a>
+            </div>
+          </li>
         </ul>
-        <div class="last">
-        	<ul type="none" class="same2">
-             <li>COPYRIGHT 2020</li>
-             <li><a href="privacy_policy.html">PRIVACY POLICY</a></li>
-             <li><a href="terms&conditions.html">TERMS & CONDITIONS</a></li>
-             <li><a>COOKIE CONSENT</a></li>
-             <li><input style="background-color: rgba(60,60,60,0.1);width: 210px; height:30px;padding: 5px;" placeholder="SUBSCRIBE TO STAY UPDATED"> <button style="background-color:rgb(228,88,44); color: white; width: 150px; height:42px;padding: 5px; border: 0px solid orange;">Subscribe</button></li>
-        </ul></div>
-        <script>
-            var slideIndex=1;
-            showSlides(slideIndex);
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+</nav>
+        
+<!--JumboTron-->
+            <div class="jumbotron jumbotron-fluid">
+      <h1 class="display-4"><i class="far fa-smile"></i> Welcome Visitors !</h1>
+      <p class="lead"> Right now you're looking at the unofficial page of Photography Club , NIT Kurukshetra.<br>The page has been created by Mr. Suman Saurav  for calling extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <p>This page has been developed using Bootstrap and all the enthusiasm...
+      <a class="btn btn-primary btn-sm" href="#" role="button">Read more</a>
+        </p>
+    </div>
+        
+<!-- MY WORK GALLERY GRID-->
+        
+        <div class="container">
+  <div class="row align-items-center">
+    <div class=" col col-lg">
+      <img src="PhotuGImg.PNG" alt="PhotuG Image" class="img-thumbnail">
+        <span class="gallery_span">PHOTOGRAPHY PAGE</span>
+    </div>
+    <div class=" col col-lg">
+      <img src="color_guess_game_IMG.PNG" alt="Color Guess Game Image" class="img-thumbnail">
+        <span class="gallery_span">COLOR GUESS GAME</span>
+    </div>
+    <div class="col col-lg">
+      <img src="spice_IMG.PNG" alt="SPICE Image" class="img-thumbnail">
+        <span class="gallery_span">SUBHAM GRIH UDYOG</span>
+    </div>
+  </div>
             
-            function plusSlides(n)
-            {
-                showSlides(slideIndex+=n)
-            }
-            
-            function currentSlide(n)
-            {
-                showSlides(slideIndex=n);
-            }
-        function showSlides(n)
-            {
-                var i;
-                var slides=document.getElementsByClassName("mySlides");
-                
-                if(n<1)
-                    {
-                        slideIndex=slides.length;
-                    }
-                if (n>slides.length)
-                    {
-                        slideIndex=1;
-                    }
-                for(i=0;i<slides.length;i++)
-                    {
-                        slides[i].style.display="none";
-                    }
-                slides[slideIndex-1].style.display = "block";
-                
-    
-                for(i=0;i<slides.length-1;i++)
-                    {
-                        document.getElementsByClassName("thumbnail")[i].style.border="0px";
-                    }
-                document.getElementsByClassName("thumbnail")[slideIndex-1].style.border="1px red solid";
-                
-        }
-          
-           function showThumb(m)
-            {
-                var i;
-                var slides=document.getElementsByClassName("mySlides");
-                for(i=0;i<slides.length;i++)
-                    {
-                        slides[i].style.display="none";
-                    }
-                slides[m].style.display = "block";
-                
-                for(i=0;i<slides.length-1;i++)
-                    {
-                        document.getElementsByClassName("thumbnail")[i].style.border="0px";
-                    }
-                document.getElementsByClassName("thumbnail")[m].style.border="2px red solid";
-            }
+    <div class="row align-items-center">
+    <div class=" col col-lg">
+      <img src="color_guess_game_IMG.PNG" alt="Color Guess Game Image" class="img-thumbnail">
+        <span class="gallery_span">PHOTOGRAPHY PAGE</span>
+    </div>
+    <div class=" col col-lg">
+      
+      <img src="Gallery_IMG.PNG" alt="Gallery Image" class="img-thumbnail">
+        <span class="gallery_span">RESTAURANT || INDIAN ACCENT</span>
+    </div>
+    <div class="col col-lg">
+      <img src="spice_IMG.PNG" alt="SPICE Image" class="img-thumbnail">
+        <span class="gallery_span">SUBHAM GRIH UDYOG</span>
+    </div>
+  </div>
+</div>
+        
+        
+<!-- CDN//JS//JQUERY//POPPER-->        
+        
+        <script src="jquery-3.5.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        
+<script>
+        
         </script>
+        
     </body>
+    
 </html>

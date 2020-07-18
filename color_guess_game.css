@@ -8,6 +8,7 @@
     font-size: 35;
     background-color: blueviolet;
     padding: 0.125em;
+    text-transform: uppercase;
     
 }
 
@@ -25,10 +26,12 @@
 
 #hard_easy,#new_color_span,#tryAgain{
     padding: 0.3em;
+    transition: all 0.8s;
 }
 
 #hard_span,#easy_span{
     padding: 0.3em;
+    transition: all 0.8s;
 }
 
 #new_color_span:hover,#hard_span:hover,#easy_span:hover{
@@ -62,6 +65,10 @@
     padding: 4em;
     border-radius: 20px;
     margin-right:0.5em;
+}
+
+.column:hover{
+    opacity: 0.8;
 }
 
 body{
