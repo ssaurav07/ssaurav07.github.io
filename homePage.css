@@ -6,15 +6,14 @@
 }
 
 .row{
-    padding: 50;
+    padding:;
 }
-.col{
+.col-sm-6{
     text-align: center;
+    padding: 20;
 }
 .gallery_span{
-    background-color: aliceblue;
-    padding: 3;
-    box-sizing: border-box;
+    color: rgb(189,15,91);
 }
 .far{
     color: rgb(189,15,91);
