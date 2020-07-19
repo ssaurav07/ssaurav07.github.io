@@ -37,9 +37,15 @@ ul{
     margin-bottom: -0;
 }
 
+
 li{
     padding: 8;
     background-color: white;
+    color: rgb(102, 101, 99);
+}
+
+li:hover{
+    color: black;
 }
 
 li:nth-of-type(2n)
