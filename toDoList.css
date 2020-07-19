@@ -15,9 +15,10 @@ body{
 
 input{
     width: 100%;
-    background-color: darkgrey;
+    background-color: beige;
     border: 0;
     padding: 8;
+    display: none;
     
 }
 
@@ -46,7 +47,7 @@ li:nth-of-type(2n)
     background-color: darkgrey;
 }
 
-.fa-plus{
+.fa-plus,.fa-check-circle{
     font-size: 20;
     float: right;
     margin-top: 8;
@@ -83,3 +84,8 @@ li:hover .fa-trash{
     }
 }
 
+.work_done{
+    text-decoration:line-through;
+    text-decoration-color: red;
+    color: blue;
+}
