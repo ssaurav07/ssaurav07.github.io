@@ -50,7 +50,7 @@ li:hover{
 
 li:nth-of-type(2n)
 {
-    background-color: darkgrey;
+    background-color: rgb(230, 228, 225);
 }
 
 .fa-plus,.fa-check-circle{
