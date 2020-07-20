@@ -3,6 +3,11 @@
 }
 .jumbotron{
     text-align: center;
+    letter-spacing: 1px;
+}
+
+.display-4{
+    text-shadow: 1px 1px ;
 }
 
 .row{

@@ -1,15 +1,25 @@
-body{
-    padding: 0.5em;
-}
-.navbar-light{
+body,html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
     
+    background: #43C6AC;
+    background: -webkit-linear-gradient(to right, #191654, #43C6AC);
+    background: linear-gradient(to right, #191654, #43C6AC)
+
 }
+
 .jumbotron{
-    background-color:aliceblue;
+    color: white;
     text-align: center;
+    background: #43C6AC;
+    background: -webkit-linear-gradient(to right, #191654, #43C6AC);
+    background: linear-gradient(to right, #191654, #43C6AC);
 }
 .btn-primary
 {
     height: 1.5em;
     padding-top: 0em;
 }
+
+
