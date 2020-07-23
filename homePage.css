@@ -1,9 +1,17 @@
-.navbar{
-    background-color: steelblue;
+body{
+    background-image: url(nightsky.jpg);
 }
+
+.form-control{
+    background-image: url(nightsky.jpg);
+}
+
 .jumbotron{
+    color: white;
     text-align: center;
     letter-spacing: 1px;
+    background-image: url(nightsky.jpg);
+    font-weight: 80;
 }
 
 .display-4{
@@ -20,12 +28,7 @@
 .gallery_span{
     color: rgb(189,15,91);
 }
-.far{
-    color: rgb(189,15,91);
-}
-.far:hover{
-    color: rgb(1,1,91);
-}
+
 
 .fas-dropdown{
     color: rgb(189,15,91);
