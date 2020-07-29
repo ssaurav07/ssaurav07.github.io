@@ -51,6 +51,11 @@ a{
     color: white;
 }
 
+a:hover{
+    color:aqua;
+    text-decoration-line: none;
+}
+
 .fas-dropdown{
     color: rgb(189,15,91);
     margin-right: 10;
