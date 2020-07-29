@@ -1,0 +1,43 @@
+body,html{
+    margin: 0;
+    background-color: beige;
+}
+.my_navbar{
+    margin:0;
+    padding:10;
+    font-size: 40;
+    font-family: cursive;
+    text-align: center;
+    color: rgb(189,19,51);
+    text-shadow: 1px 1px white;
+    background: #77A1D3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,#bbd2c5, #536976, #292e49, #E684AE, #79CBCA, #77A1D3,#00416a, #799f0c, #ffe000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,#bbd2c5, #536976, #292e49, #E684AE, #79CBCA, #77A1D3,#00416a, #799f0c, #ffe000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+form{
+    margin: 0 auto;
+    margin-top: 50;
+    width: 40%;
+}
+
+input{
+    width: 88%;
+    padding: 8;
+}
+
+button{
+    padding: 12;
+}
+
+.fas{
+    text-shadow: 0px 0px ;
+}
+
+.container{
+    margin-top: 100;
+}
+.col{
+    padding: 20;
+}
