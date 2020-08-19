@@ -4,7 +4,7 @@ body{
 }
 
 .form-control{
-    background-image: url(nightsky.jpg);
+/*    background-image: url(nightsky.jpg);*/
 }
 
 .jumbotron{
@@ -64,4 +64,18 @@ a:hover{
 
 .dropdown-item:hover .fas-dropdown{
     display: inline-block
+}
+
+@media (max-width:600px){
+	.lead{
+		font-size: 20
+	}
+	#jumboHead{
+		font-size: 20
+	}
+/*
+	.dispaly-4{
+		font-size: 60
+	}
+*/
 }

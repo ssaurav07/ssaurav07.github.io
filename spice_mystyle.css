@@ -301,7 +301,7 @@ animation-iteration-count: infinite;
 
 #field3{
     
-    background-image: url(owner1.png);
+    background-image: url(me1.jpg);
     background-size:cover;
     animation-name: owner;
     animation-duration:30s;
@@ -343,9 +343,12 @@ animation-iteration-count: infinite;
 
 @keyframes owner{
  
-    33%{background-image: url(owner.jpg)}
-    66%{background-image: url(owner.jpg)}
-    100%{background-image: url(owner.jpg)}
+    0%{background-image: url(me1.jpg)}
+    25%{background-image: url(me3.jpg)}
+    50%{background-image: url(me4.jpg);
+    background-position: top;}
+    75%{background-image: url(me2.jpg);
+        background-position: center;}
     }
 
 @media (max-width:550px)

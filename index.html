@@ -26,31 +26,32 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#self">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#self" onclick="alert('Already on the homepage!')">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link </a>
-          </li>
+         
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             My WORK 
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="patatap_clone.html" target="_blank"><span id="yes"><i class="far fa-clone fas-dropdown"></i></span>Patatap Clone</a>
+                
               <a class="dropdown-item" href="Color_Guess_game.html" target="_blank"><i class="fas fa-gamepad fas-dropdown"></i>COLOR GUESS GAME</a>
               <a class="dropdown-item" href="ToDoList.html" target="_blank"><i class="fas fa-pencil-alt fas-dropdown"></i>To DO List </a>
               <a class="dropdown-item" href="photog.html" target="_blank"><i class="fas fa-camera fas-dropdown"></i>PhotuG</a>
               <a class="dropdown-item" href="spice.html" target="_blank"><i class="fas fa-pepper-hot fas-dropdown"></i>Subham Grih Udyog</a>
+			  <a class="dropdown-item" href="https://warm-inlet-39594.herokuapp.com/" target="_blank"><i class="fab fa-blogger fas-dropdown"></i>Blog Site</a>
+				<a class="dropdown-item" href="patatap_clone.html" target="_blank"><span id="yes"><i class="far fa-clone fas-dropdown"></i></span>Patatap Clone</a>
               <a class="dropdown-item" href="Gallery.html" target="_blank"><i class="fas fa-utensils fas-dropdown"></i>Restaurant || Indian Accent</a> 
+				
                 
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#"><i class="fas fa-hammer fas-dropdown"></i>Under Development</a>
+              <a class="dropdown-item" href="Page_not_found.html"><i class="fas fa-hammer fas-dropdown"></i>Under Development</a>
             </div>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2 btn-outline-warning" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+          <input class="form-control mr-sm-2 btn-outline-red" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit" onclick="alert('Pardon! This function is still in development phase.')">Search</button>
         </form>
       </div>
 </nav>
@@ -62,7 +63,7 @@
                 You can explore through his works in MyWork Section on the top or scroll down for the content </p>
       <hr class="my-4">
       <p>This page has been developed using Bootstrap and all the enthusiasm...
-      <a class="btn btn-primary btn-sm" href="#" role="button">Read more</a>
+      <a class="btn btn-primary btn-sm" href="Page_not_found.html" role="button">Read more</a>
         </p>
     </div>
         
@@ -71,13 +72,15 @@
         <div class="container">
           <div class="row align-items-center">
             <div class=" col= col-sm-6 col-md-4">
-              <img src="patatapIMG.PNG" alt="Patatap Image" class="img-thumbnail">
-                <span class="gallery_span"><a href="patatap_clone.html" target="_blank">PLAY WITH KEYS</a></span>
-            </div>
-            <div class=" col= col-sm-6 col-md-4">
               <img src="color_guess_game_IMG.PNG" alt="Color Guess Game Image" class="img-thumbnail">
                 <span class="gallery_span"><a href="Color_Guess_game.html" target="_blank">COLOR GUESS GAME</a></span>
             </div>
+			  
+			  <div class="col= col-sm-6 col-md-4">
+              <img src="PhotuGImg.PNG" alt="Photography Image" class="img-thumbnail">
+                  <span class="gallery_span"><a href="photog.html" target="_blank">PHOTOGRAPHY PAGE</a></span>
+            </div>
+			  
             <div class="col= col-sm-6 col-md-4">
               <img src="spice_IMG.PNG" alt="SPICE Image" class="img-thumbnail">
                 <span class="gallery_span"><a href="spice.html" target="_blank">SUBHAM GRIH UDYOG</a></span>
@@ -86,19 +89,26 @@
             <div class=" col= col-sm-6 col-md-4">
               <img src="todolistIMG.PNG" alt="To Do List Image" class="img-thumbnail">
                 <span class="gallery_span"><a href="ToDoList.html" target="_blank">To Do List</a></span>
+			  </div>
+			  
+			  <div class=" col= col-sm-6 col-md-4">
+              <img src="blogCite.PNG" alt="BlogCite Image" class="img-thumbnail">
+                <span class="gallery_span"><a href="https://warm-inlet-39594.herokuapp.com/" target="_blank">Blog Site</a></span>
             </div>
-              
-              <div class="col= col-sm-6 col-md-4">
-              <img src="PhotuGImg.PNG" alt="Photography Image" class="img-thumbnail">
-                  <span class="gallery_span"><a href="photog.html" target="_blank">PHOTOGRAPHY PAGE</a></span>
+			  <div class=" col= col-sm-6 col-md-4">
+              <img src="patatapIMG.PNG" alt="Patatap Image" class="img-thumbnail">
+                <span class="gallery_span"><a href="patatap_clone.html" target="_blank">PLAY WITH KEYS</a></span>
             </div>
-              
-            <div class=" col= col-sm-6 col-md-4">
+			  
+			  <div class=" col= col-sm-6 col-md-4">
               <img src="Gallery_IMG.PNG" alt="Restaurant Image" class="img-thumbnail">
                 <span class="gallery_span"><a href="Gallery.html" target="_blank">RESTAURANT</a></span>
             </div>
             </div>
         </div>
+		
+<!--	Footer	-->
+		
         
         
 <!-- CDN//JS//JQUERY//POPPER-->        
