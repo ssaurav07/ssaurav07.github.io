@@ -1,0 +1,63 @@
+<%- include("partials/header") %>
+
+        <div class="my_navbar animate__animated animate__rollin ">
+            <i class="fas fa-american-sign-language-interpreting"></i> Recipe <i class="fas fa-american-sign-language-interpreting"></i>
+        </div>
+
+		<form action="/" method="POST">
+            <input class="animate__animated animate__rollin animate__delay-2s" type="text" placeholder="Enter the ingredients separated by comma (e.g. rice,spinach)" name="dish" required> <button class="animate__animated animate__rollin animate__bounce animate__delay-1s" type="submit"><i class="fas fa-search"></i></button>
+         </form>
+        
+        <div class="container">
+            <div class="row">
+                <div class="animate__animated animate__zoomInLeft animate__delay-3s col col-12 col-sm-6 col-lg-4">
+                    <img src="<%= image[0] %>" class="img-thumbnail img-fluid" id="img"><br>
+					<span><a href="<%= link[0] %>"><%= title[0] %></a> <br> (<%= ingredients[0] %>)</span>
+					
+                </div>
+                <div class="animate__animated animate__zoomInRight animate__delay-4s col col-12 col-sm-6 col-lg-4">
+                    <img src="<%= image[1] %>" class="img-thumbnail img-fluid" id="img"><br>
+					<span><a href="<%= link[1] %>"><%= title[1] %></a> <br> (<%= ingredients[1] %>)</span>
+                </div>
+                <div class="animate__animated animate__zoomInLeft animate__delay-3s col col-12 col-sm-6 col-lg-4">
+                    <img src="<%= image[2] %>" class="img-thumbnail img-fluid" id="img"><br>
+					<span><a href="<%= link[2] %>"><%= title[2] %></a> <br> (<%= ingredients[2] %>)</span>
+                </div>
+                <div class="animate__animated animate__zoomInLeft animate__delay-4s col col-12 col-sm-6 col-lg-4">
+                    <img src="<%= image[3] %>" class="img-thumbnail img-fluid" id="img"><br>
+					<span><a href="<%= link[3] %>"><%= title[3] %></a><br> (<%= ingredients[3] %>)</span>
+                </div>
+                <div class="animate__animated animate__zoomInLeft animate__delay-3s col col-12 col-sm-6 col-lg-4">
+                    <img src="<%= image[4] %>" class="img-thumbnail img-fluid" id="img"><br>
+					<span><a href="<%= link[4] %>"><%= title[4] %></a><br> (<%= ingredients[4] %>)</span>
+                </div>
+                <div class="animate__animated animate__zoomInLeft animate__delay-4s col col-12 col-sm-6 col-lg-4">
+                    <img src="<%= image[5] %>" class="img-thumbnail img-fluid" id="img"><br>
+					<span><a href="<%= link[5] %>"><%= title[5] %></a><br> (<%= ingredients[5] %>)</span>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!--Pagination-->
+
+       <div class="rowf">
+		   <a href="#" ><div class="columnf">
+			   Previous
+			   </div></a>
+		   <a href="#"><div class="columnf">
+			   <%= value %>
+			   </div></a>
+		   <a href="#"><div class="columnf">
+			   <%= ++value %>
+			   </div></a>
+		   <a href="#"><div class="columnf">
+			   <%= ++value %>
+			   </div></a>
+		   <a href="#"><div class="columnf">
+			   Next
+			   </div></a>
+		</div>	
+
+<%- include("partials/footer") %>
