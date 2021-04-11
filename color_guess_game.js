@@ -1,3 +1,5 @@
+
+
 var easy = document.getElementById("easy_span");
 var hard = document.getElementById("hard_span");
 
